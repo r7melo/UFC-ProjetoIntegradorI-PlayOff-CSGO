@@ -1,0 +1,25 @@
+.appBody{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.background{
+  z-index: -1000;
+  position: absolute;
+  background-image: url('../../assets/background.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.blur{
+  z-index:-1000;
+  background: rgba(61, 60, 60, 0.2); // Make sure this color has an opacity of less than 1
+  backdrop-filter: blur(8px); // This be the blur
+  height: 100vh;
+  width: 100%;
+}
